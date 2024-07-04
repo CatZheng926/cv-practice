@@ -1,0 +1,12 @@
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img = cv2.imread('cat.jpg')
+def cv_show(name,img):#name是窗口名字
+    cv2.imshow(name,img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+cv_show('image',img)#这里我装了个pip install opencv-contrib-python解决了之前OpenCVcv缺少依赖的问题
+#print(img.shape)#展示图片尺寸
+#img1 = cv2.imread('cat.jpg',cv2.IMREAD_GRAYSCALE)#这里是显示了这张图片的灰度图
+#cv_show('image',img1)
